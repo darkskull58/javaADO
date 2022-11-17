@@ -15,4 +15,5 @@ trigger:
 - master
 
 stages:
+- stage:
 - template: pipeline.yml@CICD-Base
