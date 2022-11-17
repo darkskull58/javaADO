@@ -14,5 +14,13 @@ resources:
 trigger:
 - master
 
-stages:
-- template: pipeline.yml@CICD-Base
+extends:
+  template: pipeline.yml@CICD-Base
+  parameters:
+      repository: javaADO
+      type: github
+      name: darkskull58/javaADO
+      ref: main
+      endpoint: github.com_darkskull58
+
+      
