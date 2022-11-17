@@ -1,5 +1,5 @@
-#variables:
-#- template: variables.yml
+variables:
+- template: variables.yml
 
 resources: 
   repositories: 
@@ -17,10 +17,7 @@ trigger:
 extends:
   template: pipeline.yml@CICD-Base
   parameters:
-      repository: javaADO
-      type: github
-      name: darkskull58/javaADO
-      ref: main
-      endpoint: github.com_darkskull58
+      appType: ${{ variables.appType }}
+      vmimage: ${{ variables.vmimage }}
 
       
