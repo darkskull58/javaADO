@@ -3,9 +3,9 @@ variables:
 
 resources: 
   repositories: 
-  - repository: CICD-Base
-    name: github.com_darkskull58/CICD-Base
-    type: git 
+  - type: github
+    repository: CICD-Base
+    name: darkskull58/CICD-Base
     ref: master 
 
  
