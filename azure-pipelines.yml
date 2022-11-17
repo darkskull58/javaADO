@@ -61,6 +61,7 @@ stages:
         - publish: '$(Build.SourcesDirectory)/dist/foo'
           displayName: 'Publish Angular application'
           artifact: AngularApp
+        - template: copypublish.yml
 
 
 - ${{ if eq(variables.appType,'dotnet') }}:
@@ -88,6 +89,7 @@ stages:
         inputs:
           platform: '$(buildPlatform)'
           configuration: '$(buildConfiguration)'
+      - template: copypublish.yml
 
 
 - ${{ if eq(variables.appType,'java-docker') }}:
@@ -130,3 +132,4 @@ stages:
           mavenAuthenticateFeed: false
           effectivePomSkip: false
           sonarQubeRunAnalysis: false
+      - template: copypublish.yml
