@@ -14,5 +14,5 @@ resources:
 trigger:
 - master
 
-stages:
+extends:
   - template: pipeline.yml@CICD-Base
