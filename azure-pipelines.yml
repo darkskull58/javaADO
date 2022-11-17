@@ -15,4 +15,4 @@ trigger:
 - master
 
 extends:
-  - template: pipeline.yml@CICD-Base
+  template: pipeline.yml@CICD-Base
