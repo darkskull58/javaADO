@@ -7,6 +7,7 @@ resources:
     type: github
     name: darkskull58/CICD-Base
     ref: master 
+    endpoint: github.com_darkskull58
 
  
 
