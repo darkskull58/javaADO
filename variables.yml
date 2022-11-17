@@ -3,4 +3,4 @@ variables:
 
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmimage: 'ubuntu-latest'
